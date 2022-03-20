@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include worx_v2 *.css
+recursive-include worx_v2 *.csv
+recursive-include worx_v2 *.html
+recursive-include worx_v2 *.ico
+recursive-include worx_v2 *.js
+recursive-include worx_v2 *.json
+recursive-include worx_v2 *.md
+recursive-include worx_v2 *.png
+recursive-include worx_v2 *.py
+recursive-include worx_v2 *.svg
+recursive-include worx_v2 *.txt
+recursive-exclude worx_v2 *.pyc
