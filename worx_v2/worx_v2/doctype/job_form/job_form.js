@@ -4,9 +4,10 @@
 frappe.ui.form.on('Job Form', {
 	refresh: function(frm){
 		if(frm.doc.docstatus === 1){
-			frm.add_custom_button(__('Stock Entry'), function() {
+			var finish_btn = frm.add_custom_button(__('Finish'), function() {
 				erpnext.job_form.make_se(frm, 'Manufacture');
-			}, __("Create"));
+			});
+			finish_btn.addClass('btn-primary');
 		}
 	},
 	bom_no: function(frm){
