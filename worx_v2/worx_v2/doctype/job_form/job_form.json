@@ -61,6 +61,9 @@
   "column_break_24",
   "total_operating_cost",
   "more_info",
+  "job_reciever_name",
+  "supervisor_name",
+  "quality_control_name",
   "description",
   "stock_uom",
   "column_break2",
@@ -540,13 +543,29 @@
    "fieldname": "profit",
    "fieldtype": "Currency",
    "label": "Profit"
+  },
+  {
+   "default": "doc.owner",
+   "fieldname": "job_reciever_name",
+   "fieldtype": "Data",
+   "label": "Job Reciever Name"
+  },
+  {
+   "fieldname": "supervisor_name",
+   "fieldtype": "Data",
+   "label": "Supervisor Name"
+  },
+  {
+   "fieldname": "quality_control_name",
+   "fieldtype": "Data",
+   "label": "Quality Control Name"
   }
  ],
  "icon": "fa fa-cogs",
  "image_field": "image",
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-29 14:48:10.301181",
+ "modified": "2022-10-11 17:10:20.952883",
  "modified_by": "Administrator",
  "module": "Worx V2",
  "name": "Job Form",
